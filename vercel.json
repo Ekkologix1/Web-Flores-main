@@ -1,13 +1,23 @@
 
 {
-  "rewrites": [
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
     {
-      "source": "/",
-      "destination": "/Web-Flores-main/Index.html"
+      "src": "/",
+      "dest": "/Web-Flores-main/Index.html"
     },
     {
-      "source": "/(.*)",
-      "destination": "/Web-Flores-main/$1"
+      "src": "/DATOS/FLORES.html",
+      "dest": "/Web-Flores-main/DATOS/FLORES.html"
+    },
+    {
+      "src": "/DATOS/(.*)",
+      "dest": "/Web-Flores-main/DATOS/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/Web-Flores-main/$1"
     }
   ]
 }

@@ -1,14 +1,13 @@
+
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites": [
     {
       "source": "/",
       "destination": "/Web-Flores-main/Index.html"
     },
     {
-      "source": "/DATOS/(.*)",
-      "destination": "/Web-Flores-main/DATOS/$1"
+      "source": "/(.*)",
+      "destination": "/Web-Flores-main/$1"
     }
   ]
 }

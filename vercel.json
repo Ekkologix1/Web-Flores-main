@@ -1,12 +1,14 @@
 {
-  "rewrites": [
+  "builds": [
     {
-      "source": "/",
-      "destination": "/index.html"
-    },
+      "src": "Web-Flores-main/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/$1"
+      "src": "/(.*)",
+      "dest": "/Web-Flores-main/$1"
     }
   ]
 }
